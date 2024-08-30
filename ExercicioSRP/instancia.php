@@ -9,7 +9,7 @@
     $userService->registerUser("Joao", "joao@gmail.com");
     $userService->registerUser("luiz", "luiz@gmail.com");
 
-    $retrievedUser = $userRepository->getUserEmail("joao@gmail.com");
+    $retrievedUser = $userRepository->getUserEmail("gustavo@gmail.com");
 
     if ($retrievedUser !== null) {
         echo "User encontrado: " . $retrievedUser->getNome() . " - " . $retrievedUser->getEmail();
